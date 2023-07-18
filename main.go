@@ -43,7 +43,7 @@ func getRequestToByteArray(url string) ([]byte, error) {
 
     // Create HTTP client with timeout
     client := &http.Client{
-        Timeout: 30 * time.Second,
+        Timeout: 180 * time.Second,
     }
 
     // Create and modify HTTP request before sending
@@ -89,7 +89,7 @@ func iaSave(pageurl string) {
 
     // Create HTTP client with timeout
     client := &http.Client{
-        Timeout: 60 * time.Second,
+        Timeout: 180 * time.Second,
     }
 
     // Create and modify HTTP request before sending
